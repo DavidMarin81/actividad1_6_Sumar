@@ -1,14 +1,14 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class actividad1_6 {
+public class actividad7 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         boolean salir = false;
         String cadena = "";
 
-        File directorio = new File("out\\production\\actividad1_6_Sumar");
-        ProcessBuilder pb = new ProcessBuilder("java", "actividad1_6_Sumar");
+        File directorio = new File("out\\production\\actividad7LeerCadenas");
+        ProcessBuilder pb = new ProcessBuilder("java", "actividad7LeerCadenas");
         pb.directory(directorio);
 
         Process p;
@@ -26,7 +26,7 @@ public class actividad1_6 {
             is = p.getInputStream();
             int c;
             while ((c = is.read()) != -1)
-                System.err.print((char) c);
+                System.out.print((char) c);
             if (cadena.equals("*")) {
                 salir = true;
             }

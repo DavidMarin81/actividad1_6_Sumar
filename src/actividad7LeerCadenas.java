@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class actividad1_6_Sumar {
+public class actividad7LeerCadenas {
     public static void main(String[] args) {
         String texto = "";
         try (InputStreamReader in = new InputStreamReader(System.in);
