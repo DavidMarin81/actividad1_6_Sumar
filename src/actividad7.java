@@ -7,7 +7,7 @@ public class actividad7 {
         boolean salir = false;
         String cadena = "";
 
-        File directorio = new File("out\\production\\actividad7LeerCadenas");
+        File directorio = new File("out\\production\\actividad1_7");
         ProcessBuilder pb = new ProcessBuilder("java", "actividad7LeerCadenas");
         pb.directory(directorio);
 
@@ -31,7 +31,5 @@ public class actividad7 {
                 salir = true;
             }
         }
-
-
     }
 }
